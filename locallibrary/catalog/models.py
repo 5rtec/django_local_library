@@ -77,10 +77,11 @@ class Book(models.Model):
         ordering = ['title', 'author']
 
     def display_genre(self):
-        """Creates a string for the Genre. This is required to display genre in Admin."""
-        return ', '.join([genre.name for genre in self.genre.all()[:3]])
+        """Creates a string of all Genres associated with the current 
+        object. This is required to display genre in Admin."""
+        return ', '.join([genre.name for genre in self.genres.all()[:3]])
 
-    display_genre.short_description = 'Genre'
+    display_genre.short_description = 'Genre :)'
 
     def get_absolute_url(self):
         """Returns the url to access a particular book record."""

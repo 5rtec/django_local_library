@@ -1,0 +1,129 @@
+[
+  {
+    "model": "catalog.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Science Fiction"
+    }
+  },
+  {
+    "model": "catalog.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Non Fiction"
+    }
+  },
+  {
+    "model": "catalog.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Fiction"
+    }
+  },
+  {
+    "model": "catalog.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Text Book"
+    }
+  },
+  {
+    "model": "catalog.language",
+    "pk": 1,
+    "fields": {
+      "name": "Urdu"
+    }
+  },
+  {
+    "model": "catalog.language",
+    "pk": 2,
+    "fields": {
+      "name": "English"
+    }
+  },
+  {
+    "model": "catalog.book",
+    "pk": 1,
+    "fields": {
+      "title": "The Power of One",
+      "author": 3,
+      "summary": "'The Power of One has everything: suspense, the exotic, violence; mysticism, psychology and magic; schoolboy adventures, drama.' ... The New York Times",
+      "isbn": 9780345410054,
+      "language": 2,
+      "genres": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.book",
+    "pk": 2,
+    "fields": {
+      "title": "DJANGO for Beginners",
+      "author": 2,
+      "summary": "Learn how to build five real-world Python web applications with authentication, testing, permissions, environment variables, and production-ready deployment.",
+      "isbn": 1111111111111,
+      "language": 2,
+      "genres": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Bryce",
+      "last_name": "Courtenay",
+      "date_of_birth": "1933-07-14",
+      "date_of_death": "2012-11-22"
+    }
+  },
+  {
+    "model": "catalog.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "William",
+      "last_name": "Vincent",
+      "date_of_birth": null,
+      "date_of_death": null
+    }
+  },
+  {
+    "model": "catalog.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Ilyas",
+      "last_name": "Khan",
+      "date_of_birth": "1962-05-07",
+      "date_of_death": null
+    }
+  },
+  {
+    "model": "catalog.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Earl",
+      "last_name": "Mindell",
+      "date_of_birth": null,
+      "date_of_death": null
+    }
+  },
+  {
+    "model": "catalog.book",
+    "pk": 3,
+    "fields": {
+      "title": "The Vitamin Bible",
+      "author": 4,
+      "summary": "This classic compendium has been significantly updated to put the facts you need at your fingertips so you can live a longer, healthier and better life. With 20% new material, this comprehensive guide to vitamins and their health effects has the most up-to-date information to empower and enlighten readers. ",
+      "isbn": 1111111111112,
+      "language": 2,
+      "genres": [
+        2
+      ]
+    }
+  }
+]
