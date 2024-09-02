@@ -14,6 +14,10 @@ admin.site.register(Language)
 # Method 1
 # 1 Define the admin class
 # 2 Register the admin class with the associated model
+
+class BookInline(admin.TabularInline):
+    model = Book
+    extra = 1
 class AuthorAdmin(admin.ModelAdmin):
     # List View configuration 
     # select to change list
@@ -24,12 +28,17 @@ class AuthorAdmin(admin.ModelAdmin):
     # change page
     
     fields = ['first_name', 'last_name', ('date_of_birth', 'date_of_death')]
+    
+    #Inline editing of a book in Author
+    inlines = [BookInline]
+    
 admin.site.register(Author, AuthorAdmin)
 
 # repeat for Book, and BookInstance
 # Configure BookInstance for Inline editing
 class BooksInstanceInline(admin.TabularInline):
     model = BookInstance
+    extra = 1
 # Method 2: method 1 done in 1 step
 # 1 Define and Register the Admin class for Book and BookInstance 
 #   using decorator
