@@ -48,7 +48,7 @@ class BookAdmin(admin.ModelAdmin):
     list_display = ['title', 'author', 'language', 'display_genre']
     
     # detail view
-    fields = ['title', ('author', 'language'), 'genres']
+    fields = ['title', 'summary', 'isbn', ('author', 'language'), 'genres']
     
     # Inline editing of BookInstance
     inlines = [BooksInstanceInline]

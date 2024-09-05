@@ -74,7 +74,7 @@ class Book(models.Model):
         'Language', on_delete=models.SET_NULL, null=True)
 
     class Meta:
-        ordering = ['title', 'author']
+        ordering = ['id', 'title', 'author']
 
     def display_genre(self):
         """Creates a string of all Genres associated with the current 
@@ -124,6 +124,7 @@ class BookInstance(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return f'{self.id} ({self.book.title})'
+    
 class Author(models.Model):
     """Model representing an author."""
     first_name = models.CharField(max_length=100)
