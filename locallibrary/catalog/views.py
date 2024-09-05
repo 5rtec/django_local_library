@@ -24,6 +24,12 @@ def index(request):
     num_text_books_available = genre_id.book_set.all()
     genre_count = genre_id.book_set.count()
     
+    # Session: count the number of times the homepage is viewed 
+    num_visits = request.session.get('num_visits', 0)
+    num_visits += 1
+    request.session['num_visits'] = num_visits
+    request.session.modified = True
+    
     #3 Contexts - data to pass to the template for processing
     context = {
         'website_title': website_title,
@@ -34,6 +40,7 @@ def index(request):
         'num_genres': num_genres,
         'genre_count': genre_count,
         'num_text_books_available': num_text_books_available,
+        'num_visits': num_visits,
     }
     
     #4 Render the HTML templat index.html with data in the context
