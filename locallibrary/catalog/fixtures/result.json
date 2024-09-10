@@ -73,6 +73,30 @@
     }
   },
   {
+    "model": "catalog.book",
+    "pk": 3,
+    "fields": {
+      "title": "The Vitamin Bible",
+      "author": 4,
+      "summary": "This classic compendium has been significantly updated to put the facts you need at your fingertips so you can live a longer, healthier and better life. With 20% new material, this comprehensive guide to vitamins and their health effects has the most up-to-date information to empower and enlighten readers. ",
+      "isbn": 1111111111112,
+      "language": 2,
+      "genres": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "catalog.bookinstance",
+    "pk": "89fda170-8102-4488-9f64-43f718f08339",
+    "fields": {
+      "book": 2,
+      "imprint": "3D Printers",
+      "due_back": null,
+      "status": "m"
+    }
+  },
+  {
     "model": "catalog.author",
     "pk": 1,
     "fields": {
@@ -88,7 +112,7 @@
     "fields": {
       "first_name": "William",
       "last_name": "Vincent",
-      "date_of_birth": null,
+      "date_of_birth": "1979-05-04",
       "date_of_death": null
     }
   },
@@ -108,22 +132,8 @@
     "fields": {
       "first_name": "Earl",
       "last_name": "Mindell",
-      "date_of_birth": null,
+      "date_of_birth": "1980-04-06",
       "date_of_death": null
-    }
-  },
-  {
-    "model": "catalog.book",
-    "pk": 3,
-    "fields": {
-      "title": "The Vitamin Bible",
-      "author": 4,
-      "summary": "This classic compendium has been significantly updated to put the facts you need at your fingertips so you can live a longer, healthier and better life. With 20% new material, this comprehensive guide to vitamins and their health effects has the most up-to-date information to empower and enlighten readers. ",
-      "isbn": 1111111111112,
-      "language": 2,
-      "genres": [
-        2
-      ]
     }
   }
 ]

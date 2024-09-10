@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&oi)loc3_+#_he)lsxt&bo0)+m=_1pnblwei1pcz^i(ccb*36)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['locallibrary', '127.0.0.1']
+ALLOWED_HOSTS = ['ll.local']
 
 
 # Application definition
@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['locallibrary', '127.0.0.1']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.contenttypes', # allows permissions to be associated with models
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',

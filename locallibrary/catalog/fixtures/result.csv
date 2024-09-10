@@ -1,0 +1,15 @@
+﻿model,pk,fields__first_name,fields__last_name,fields__date_of_birth,fields__date_of_death,fields__book,fields__imprint,fields__due_back,fields__status,fields__title,fields__author,fields__summary,fields__isbn,fields__language,fields__genres__001,fields__genres__002,fields__genres__003,fields__genres__004,fields__name
+catalog.genre,1,,,,,,,,,,,,,,,,,,Science Fiction
+catalog.genre,2,,,,,,,,,,,,,,,,,,Non Fiction
+catalog.genre,3,,,,,,,,,,,,,,,,,,Fiction
+catalog.genre,4,,,,,,,,,,,,,,,,,,Text Book
+catalog.language,1,,,,,,,,,,,,,,,,,,Urdu
+catalog.language,2,,,,,,,,,,,,,,,,,,English
+catalog.book,1,,,,,,,,,The Power of One,3,"'The Power of One has everything: suspense, the exotic, violence; mysticism, psychology and magic; schoolboy adventures, drama.' ... The New York Times",9780345410054,2,3,,,,
+catalog.book,2,,,,,,,,,DJANGO for Beginners,2,"Learn how to build five real-world Python web applications with authentication, testing, permissions, environment variables, and production-ready deployment.",1111111111111,2,1,2,3,4,
+catalog.book,3,,,,,,,,,The Vitamin Bible,4,"This classic compendium has been significantly updated to put the facts you need at your fingertips so you can live a longer, healthier and better life. With 20% new material, this comprehensive guide to vitamins and their health effects has the most up-to-date information to empower and enlighten readers. ",1111111111112,2,2,,,,
+catalog.bookinstance,89fda170-8102-4488-9f64-43f718f08339,,,,,2,3D Printers,null,m,,,,,,,,,,
+catalog.author,1,Bryce,Courtenay,1933-07-14,2012-11-22,,,,,,,,,,,,,,
+catalog.author,2,William,Vincent,1979-05-04,null,,,,,,,,,,,,,,
+catalog.author,3,Ilyas,Khan,1962-05-07,null,,,,,,,,,,,,,,
+catalog.author,4,Earl,Mindell,1980-04-06,null,,,,,,,,,,,,,,
